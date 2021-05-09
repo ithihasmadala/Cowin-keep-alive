@@ -12,7 +12,7 @@ You are already using exisiting Cowin notification bots, but you are unable to l
    * [Requirements](#requirements)
    * [Configuration](#configuration)
    * [Run](#run)
-   * [What to do when you find a slot open?](#what-to-do-when-you-find-a-slot-open?)
+   * [What to do when you find a slot open?](#What-to-do-when-you-find-a-slot-open?)
    * [Caution](#caution)
 <!--te-->
 
