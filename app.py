@@ -9,14 +9,14 @@ from datetime import datetime
 
 #### Configuration BEGIN
 
-phone = xxxxxxxxxx      ### 10 Digits, no zeros and no +91
+phone = 8073955450      ### 10 Digits, no zeros and no +91
 age_grp = '18'          ### Type either '18' or '45' or 'Both'
-vaccine = 'Both'        ### 'Covishield' or 'Covaxin' or 'Both'
+vaccine = 'Covaxin'        ### 'Covishield' or 'Covaxin' or 'Both'
 state = 'Karnataka'     ### Make sure the spelling is right
 district = 'BBMP'       ### Make sure the spelling & casing is right
-dose = 2                ### 1 or 2
-pos = 1                 ### Position: 1, 2, 3 or 4 according to the benefitiaries registered in your account
-refresh_delay = 120     ### in seconds
+dose = 1                ### 1 or 2
+pos = 2                 ### Position: 1, 2, 3 or 4 according to the benefitiaries registered in your account
+refresh_delay = 840     ### in seconds
 
 OTP = None # Input this in the terminal when prompted
 
@@ -129,14 +129,10 @@ def keep_alive():
         bot.refresh()
         
         try:
-            bot.district_select()
-            sleep(0.25)
-            bot.age()
-            sleep(0.25)
-            bot.vaccine_type()
-        except:
-            #bot.home()
             initialize()
+        except:
+            print("Incorrect OTP, try again")
+            
 
 initialize()
 keep_alive()
