@@ -8,7 +8,7 @@ Use case: You are already using exisiting Cowin notification bots, but you are u
 1. Make sure you have one of the latest versions of [Python](https://www.python.org/downloads/) installed
 2. Install Selenium: `pip install selenium`
 3. Chrome browser installed
-4. Tested only on Windows in v1
+4. Tested only on Windows in v1. For mac/linux, change the path of the chromedriver accordingly.
 
 
 # Configuration (Make the necessary changes in the app.py file):
