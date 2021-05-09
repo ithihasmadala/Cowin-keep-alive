@@ -1,13 +1,17 @@
 # Cowin-keep-alive
 Keep Cowin Logged In and Refreshed for immediate scheduling with the help of Selenium! 
 
-Use case: You are already using exisiting Cowin notification bots, but you are unable to login on time for scheduling your vaccine. 
+# Use case
+You are already using exisiting Cowin notification bots, but you are unable to login on time for scheduling your vaccine. 
 
-
+## Contents
 <!--ts-->
+   * [Cowin-keep-alive](#Cowin-keep-alive)
+   * [Use case](#use-case)
+   * [Contents](#contents)
    * [Requirements](#requirements)
-   * [Installation](#installation)
-   * [Usage](#usage)
+   * [Configuration](#configuration-(Make-the-necessary-changes-in-the-app.py-file))
+   * [Run](#run)
 <!--te-->
 
 
