@@ -9,7 +9,7 @@ from datetime import datetime
 
 #### Configuration BEGIN
 
-phone = 8073955450      ### 10 Digits, no zeros and no +91
+phone = xxxxxxxxxx      ### 10 Digits, no zeros and no +91
 age_grp = '18'          ### Type either '18' or '45' or 'Both'
 vaccine = 'Covaxin'        ### 'Covishield' or 'Covaxin' or 'Both'
 state = 'Karnataka'     ### Make sure the spelling is right
