@@ -1,3 +1,5 @@
+# Important Update: Without requesting for OTP every 15 minutes, it seems to be unreliable, hence I have modified the app to request for OTP every 14 minutes to keep Cowin alive. At the moment, this is the best that can be done
+
 # Cowin-keep-alive
 Keep Cowin Logged In and Refreshed for immediate scheduling with the help of Selenium! 
 
