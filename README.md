@@ -12,7 +12,7 @@ You are already using exisiting Cowin notification bots, but you are unable to l
    * [Requirements](#requirements)
    * [Configuration](#configuration)
    * [Run](#run)
-   * [What to do when you find a slot open?](#What to do when you find a slot open?)
+   * [What to do when you find a slot open?](#what-to-do-when-you-find-a-slot-open?)
    * [Caution](#caution)
 <!--te-->
 
@@ -46,7 +46,7 @@ refresh_delay = 120     -> in seconds
 3. Enter the OTP in the Windows Powershell window or Mac/Linux terminals when prompted
 4. Sit back and watch the bot keep your cowin alive till a slot opens up.
 
-### What to do when you find a slot open?
+## What to do when you find a slot open?
 1. Terminate the bot immediately so that it does not refresh when you are selecting your vaccine slot.
 
 ## Caution
