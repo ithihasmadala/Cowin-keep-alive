@@ -6,4 +6,4 @@ Use case: You are already using exisiting Cowin notification bots, but you are u
 Requirements:
 
 1. Make sure you have one of the latest versions of [Python](https://www.python.org/downloads/) installed
-2. Install selenium: `pip install selenium'
+2. Install selenium: `pip install selenium`
