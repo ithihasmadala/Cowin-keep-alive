@@ -31,4 +31,4 @@ refresh_delay = 120     -> in seconds
 
 ## Caution
 
-Do not minimize the chrome window, the process will fail and the app needs to be restarted
+Do not minimize the chrome window, the process will fail and you would have to start over again.
