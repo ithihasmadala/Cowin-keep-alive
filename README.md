@@ -28,7 +28,13 @@ refresh_delay = 120     -> in seconds
 
 1. Clone this repository or download the zip file and extract.
 2. Run `python app.py` in Windows Powershell or Mac/Linux terminals
+3. Enter the OTP in the Windows Powershell window or Mac/Linux terminals when prompted
+4. Sit back and watch the bot keep your cowin alive till a slot opens up.
+
+## What to do when you find a slot open
+1. Terminate the bot immediately so that it does not refresh when you are selecting your vaccine slot.
 
 ## Caution
 
-Do not minimize the chrome window, the process will fail and you would have to start over again.
+1. Do not minimize the chrome window, the process will fail and you would have to start over again.
+2. Make sure you enter the OTP in the Windows Powershell window or Mac/Linux terminals when prompted, otherwise there is no point in using the bot.
