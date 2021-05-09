@@ -10,8 +10,10 @@ You are already using exisiting Cowin notification bots, but you are unable to l
    * [Use case](#use-case)
    * [Contents](#contents)
    * [Requirements](#requirements)
-   * [Configuration](#configuration-(Make-the-necessary-changes-in-the-app.py-file))
+   * [Configuration](#configuration)
    * [Run](#run)
+   * [What to do when you find a slot open?](#What to do when you find a slot open?)
+   * [Caution](#caution)
 <!--te-->
 
 
@@ -24,8 +26,8 @@ You are already using exisiting Cowin notification bots, but you are unable to l
 4. Tested only on Windows in v1. For mac/linux, change the path of the chromedriver accordingly.
 
 
-# Configuration (Make the necessary changes in the app.py file):
-
+# Configuration:
+Make the necessary changes in the app.py file
 ```
 phone = xxxxxxxxxx      -> 10 Digits, no zeros and no +91
 age_grp = '18'          -> Type either '18' or '45' or 'Both'
@@ -44,7 +46,7 @@ refresh_delay = 120     -> in seconds
 3. Enter the OTP in the Windows Powershell window or Mac/Linux terminals when prompted
 4. Sit back and watch the bot keep your cowin alive till a slot opens up.
 
-## What to do when you find a slot open?
+### What to do when you find a slot open?
 1. Terminate the bot immediately so that it does not refresh when you are selecting your vaccine slot.
 
 ## Caution
