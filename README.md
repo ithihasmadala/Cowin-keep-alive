@@ -7,6 +7,8 @@ Use case: You are already using exisiting Cowin notification bots, but you are u
 
 1. Make sure you have one of the latest versions of [Python](https://www.python.org/downloads/) installed
 2. Install Selenium: `pip install selenium`
+3. Chrome browser installed
+4. Tested only on Windows in v1
 
 
 # Configuration (Make the necessary changes in the app.py file):
@@ -22,3 +24,11 @@ pos = 1                 -> Position: 1, 2, 3 or 4 according to the order of the 
 refresh_delay = 120     -> in seconds
 ```
 
+## Run
+
+1. Clone this repository or download the zip file and extract.
+2. Run `python app.py` in Windows Powershell or Mac/Linux terminals
+
+## Caution
+
+Do not minimize the chrome window, the process will fail and the app needs to be restarted
