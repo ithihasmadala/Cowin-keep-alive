@@ -113,7 +113,6 @@ class CowinBot():
 bot = CowinBot()
 
 def initialize():
-    bot.login()
 
     Notification(
 	title='OTP Alert!',
@@ -123,6 +122,7 @@ def initialize():
 	urgency='Urgent'
     ).send()
 
+    bot.login()
     sleep(4)
     bot.schedule()
     sleep(1)
