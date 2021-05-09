@@ -1,6 +1,8 @@
 # Important Update: 
 Without requesting for OTP every 15 minutes, it seems to be unreliable, hence I have modified the app to request for OTP every 14 minutes to keep Cowin alive. At the moment, this is the best that can be done.
 
+Added Windows Notifications for OTP reminder!
+
 # Cowin-keep-alive
 Keep Cowin Logged In and Refreshed for immediate scheduling with the help of Selenium! 
 
@@ -25,8 +27,9 @@ You are already using exisiting Cowin notification bots, but you are unable to l
 
 1. Make sure you have one of the latest versions of [Python](https://www.python.org/downloads/) installed
 2. Install Selenium: `pip install selenium`
-3. Chrome browser installed
-4. Tested only on Windows in v1. For mac/linux, change the path of the chromedriver accordingly.
+3. Install py-notifier `pip install py-notifier`
+4. Chrome browser installed
+5. Tested only on Windows in v1. For mac/linux, change the path of the chromedriver accordingly.
 
 
 # Configuration:
