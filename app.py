@@ -7,9 +7,11 @@ from selenium.webdriver.support.ui import Select
 from time import sleep
 from datetime import datetime
 
+from pynotifier import Notification
+
 #### Configuration BEGIN
 
-phone = xxxxxxxxxx      ### 10 Digits, no zeros and no +91
+phone = 8073955450      ### 10 Digits, no zeros and no +91
 age_grp = '18'          ### Type either '18' or '45' or 'Both'
 vaccine = 'Covaxin'        ### 'Covishield' or 'Covaxin' or 'Both'
 state = 'Karnataka'     ### Make sure the spelling is right
@@ -112,6 +114,15 @@ bot = CowinBot()
 
 def initialize():
     bot.login()
+
+    Notification(
+	title='OTP Alert!',
+	description='Please Enter your Cowin OTP in the terminal!',
+	#icon_path='path/to/image/file/icon.png', # On Windows .ico is required, on Linux - .png
+	duration=5,                              # Duration in seconds
+	urgency='Urgent'
+    ).send()
+
     sleep(4)
     bot.schedule()
     sleep(1)
