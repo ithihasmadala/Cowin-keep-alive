@@ -1,15 +1,19 @@
 # Important Update(s): 
+
 Without requesting for OTP every 15 minutes, it seems to be unreliable, hence I have modified the app to request for OTP every 14 minutes to keep Cowin alive. At the moment, this is the best that can be done.
 
-Added Windows Notifications for OTP reminder!
+Added (optional) Windows Notifications for OTP reminder!
 
 # Cowin-keep-alive
+
 Keep Cowin Logged In and Refreshed for immediate scheduling with the help of Selenium! 
 
 # Use case
+
 You are already using exisiting Cowin notification bots, but you are unable to login on time for scheduling your vaccine. 
 
 ## Contents
+
 <!--ts-->
    * [Cowin-keep-alive](#Cowin-keep-alive)
    * [Use case](#use-case)
@@ -33,6 +37,7 @@ You are already using exisiting Cowin notification bots, but you are unable to l
 
 
 # Configuration:
+
 Make the necessary changes in the app.py file
 ```
 phone = xxxxxxxxxx      -> 10 Digits, no zeros and no +91
@@ -43,6 +48,7 @@ district = 'BBMP'       -> Make sure the spelling & casing is right
 dose = 2                -> 1 or 2
 pos = 1                 -> Position: 1, 2, 3 or 4 according to the order of the benefitiaries registered in your account 
 refresh_delay = 120     -> in seconds
+notify = False          -> Set to true if you want to be notified on logout
 ```
 
 ## Run
@@ -53,6 +59,7 @@ refresh_delay = 120     -> in seconds
 4. Sit back and watch the bot keep your cowin alive till a slot opens up.
 
 ## What to do when you find a slot open?
+
 1. Terminate the bot immediately so that it does not refresh when you are selecting your vaccine slot.
 
 ## Caution
