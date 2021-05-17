@@ -11,15 +11,15 @@ from pynotifier import Notification
 
 #### Configuration BEGIN
 
-phone = 8073955450      ### 10 Digits, no zeros and no +91
+phone = 0000000000      ### 10 Digits, no zeros and no +91
 age_grp = '18'          ### Type either '18' or '45' or 'Both'
-vaccine = 'Covaxin'        ### 'Covishield' or 'Covaxin' or 'Both'
+vaccine = 'Covaxin'     ### 'Covishield' or 'Covaxin' or 'Both'
 state = 'Karnataka'     ### Make sure the spelling is right
 district = 'BBMP'       ### Make sure the spelling & casing is right
 dose = 1                ### 1 or 2
 pos = 2                 ### Position: 1, 2, 3 or 4 according to the benefitiaries registered in your account
-refresh_delay = 840     ### in seconds
-
+refresh_delay = 60*14   ### in seconds
+notify = False          ### Set to true if you want to be notified on logout
 OTP = None # Input this in the terminal when prompted
 
 #### Configuration END
@@ -62,11 +62,9 @@ class CowinBot():
         schedule_btn = self.driver.find_element_by_xpath('//*[@id="main-content"]/app-beneficiary-dashboard/ion-content/div/div/ion-grid/ion-row/ion-col/ion-grid[1]/ion-row[{}]/ion-col/ion-grid/ion-row[{}]/ion-col[2]/ul/li/a'.format(pos+1, 4+dose-1))
         schedule_btn.click()
         sleep(0.5)
-        schedule_btn_2 = self.driver.find_element_by_xpath('//ion-button[contains(text(), "{}")]'.format("Schedule Now"))
-        schedule_btn_2.click()
 
     def district_select(self):
-        search_by_district_btn = self.driver.find_element_by_xpath('//*[@id="main-content"]/app-appointment-table/ion-content/div/div/ion-grid/ion-row/ion-grid/ion-row/ion-col/ion-grid/ion-row/ion-col[2]/form/ion-grid/ion-row/ion-col[1]/div/label/div')
+        search_by_district_btn = self.driver.find_element_by_xpath('//div[@data-unchecked="Search By PIN" and @data-checked="Search By District"]')
         search_by_district_btn.click()
         sleep(0.25)
 
@@ -114,13 +112,14 @@ bot = CowinBot()
 
 def initialize():
 
-    Notification(
-	title='OTP Alert!',
-	description='Please Enter your Cowin OTP in the terminal!',
-	#icon_path='path/to/image/file/icon.png', # On Windows .ico is required, on Linux - .png
-	duration=5,                              # Duration in seconds
-	urgency='Urgent'
-    ).send()
+    if(notify):
+        Notification(
+        title='OTP Alert!',
+        description='Please Enter your Cowin OTP in the terminal!',
+        #icon_path='path/to/image/file/icon.png', # On Windows .ico is required, on Linux - .png
+        duration=5,                              # Duration in seconds
+        urgency='Urgent'
+        ).send()
 
     bot.login()
     sleep(4)
